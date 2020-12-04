@@ -1,5 +1,5 @@
 <template>
-	<view class="scan-fixed" :style="{ bottom: bottom + 'px', right: right + 'px' }"  @touchstart="start" @touchmove="move" @touchend="end">
+	<view class="scan-fixed" :style="{ bottom: bottom + 'px', right: right + 'px' }"  @touchstart="start" @touchmove.stop.prevent="move" @touchend="end">
 		<text class="icon" >拖动</text>
 	</view>
 </template>
